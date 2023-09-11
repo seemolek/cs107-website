@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	
+	<meta charset="UTF-8">
+	<title> Third JavaScript</title>
+	
+	<script>
+
+		function MouseOver(elem) {
+            document.bgColor = "#BBE4FF";
+          }
+
+		function MouseOut(elem) {
+            document.bgColor = "	#FFFFFF";
+          }
+
+          var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+                if (clicks <= 3) {
+                  alert("You clicked this box  " + clicks + "  time(s)");
+                }
+              }
+      </script>
+      <style>
+      div.text
+      {
+        background-color:#FFCEB9;
+        }
+      </style>
+</head>
+<body>
+<a onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"> 
+When you move your mouse over the text here, the background colour of the page will change. 
+Moving the mouse away from the text here will restore the original background colour.  </a>
+<br>
+<br>
+<div onclick="onClick()" class="text">
+<b> Clicking </b> on this "block" will enable alerts on how many times you have clicked, but only up to three (3) times!
+After three (3) times, no more alerts will pop up.
+</div>
+
+<br> <br><a href="javahwpage.html"> Back to JavaScript homework page </a>	
+</body>
+</html>
+	

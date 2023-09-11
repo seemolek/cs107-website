@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	
+	<meta charset="UTF-8">
+	<title> Second JavaScript</title>
+	
+	<script>
+      var celsius = prompt("Please enter temperature of bowl in celsius");
+celsius = parseFloat(celsius);
+var farenheit;
+farenheit = celsius * 1.8 + 32;
+var distancef = farenheit - 32;
+document.write("temperature in celsius: ");
+     document.write(celsius);
+     document.write("<br>Temperature in farenheit: ");
+     document.write(farenheit);
+     document.write("<br>distance from point of freezing in farenheit: ");
+     document.write(distancef);
+var character;
+if (celsius >=  30) {
+  character = "too hot -  bowl belongs to papa bear";
+}
+else if (celsius >= 20) {
+  character = " just right - bowl belongs to baby bear";
+}
+else {
+  character = "too cold - bowl belongs to mama bear";
+}
+document.write("<br>Temperature of the bowl is &nbsp;");
+document.write(celsius + "degrees");
+document.write("&nbsp; it's &nbsp;");
+document.write(character)
+    </script>
+	
+<body>
+<br> <br><a href="javahwpage.html"> Back to JavaScript homework page </a>	
+</body>	
+</html>
+	

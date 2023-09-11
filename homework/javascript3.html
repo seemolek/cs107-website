@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	
+	<meta charset="UTF-8">
+	<title> Second JavaScript</title>
+	
+	<script>
+   var celsius;
+ var bad_input = true;
+ while (bad_input == true) {
+                 celsius = prompt("Please enter temperature of the bowl in celsius within the range of freezing (0) to boiling (100)");
+                 celsius = parseFloat(celsius);
+                 if ( ! (isNaN(celsius) || celsius < 0 || 100 < celsius) ) {
+                                    bad_input = false;
+                                 }
+                             }
+var character;
+if (celsius >=  65) {
+  character = "too hot -  bowl belongs to papa bear";
+}
+else if (celsius >= 30) {
+  character = " just right - bowl belongs to baby bear";
+}
+else {
+  character = "too cold - bowl belongs to mama bear";
+}
+document.write("The temperature of the bowl is &nbsp;");
+document.write(celsius );
+document.write("&nbsp; degrees, &nbsp; it is &nbsp;");
+document.write(character)
+    </script>
+	
+<body>
+<br> <br><a href="javahwpage.html"> Back to JavaScript homework page </a>	
+</body>	
+</html>
+	
